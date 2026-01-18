@@ -2,54 +2,52 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>HTML-Kopiervorlagen</title>
+<title>HTML-Referenzliste</title>
 
 <style>
-/* ---------------- GRUNDLAYOUT ---------------- */
 body {
     font-family: Arial, sans-serif;
     background: #f4f6f8;
     color: #222;
-    line-height: 1.7;
     margin: 0;
+    line-height: 1.7;
 }
 
 header {
     background: linear-gradient(120deg, #ff0080, #ff66b2);
     color: white;
-    padding: 60px 10%;
+    padding: 50px 10%;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     margin: 0;
 }
 
 section {
-    padding: 50px 10%;
+    padding: 40px 10%;
     background: white;
     border-bottom: 1px solid #ddd;
 }
 
 h2 {
     color: #ff0080;
-    font-size: 2em;
     margin-bottom: 15px;
 }
 
-/* ---------------- CODE BOX ---------------- */
+/* Code-Box */
 .code-box {
     background: #1e1e1e;
     color: #dcdcdc;
     padding: 20px;
     border-radius: 8px;
-    overflow-x: auto;
     font-family: Consolas, monospace;
     margin: 15px 0;
+    overflow-x: auto;
 }
 
-/* ---------------- INFO BOX ---------------- */
+/* Info-Box */
 .info {
     background: #ffe0f0;
     border-left: 6px solid #ff0080;
@@ -57,12 +55,22 @@ h2 {
     margin: 20px 0;
 }
 
-/* ---------------- LISTEN ---------------- */
-ul {
-    margin-left: 20px;
+/* Zurück-Button */
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff0080;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-/* ---------------- FOOTER ---------------- */
+.back-button:hover {
+    background: #ff66b2;
+}
+
 footer {
     text-align: center;
     padding: 25px;
@@ -76,12 +84,17 @@ footer {
 <body>
 
 <header>
-    <h1>HTML-Kopiervorlagen</h1>
-    <p>Übe direkt mit den Vorlagen – alles zum Kopieren!</p>
+    <h1>HTML-Referenzliste</h1>
+    <p>Übersicht aller wichtigen HTML-Tags zum Kopieren</p>
 </header>
 
+<!-- Zurück-Button -->
+<section style="text-align:center; margin:40px 0;">
+    <a href="index.html" class="back-button">← Zurück zur Übersicht</a>
+</section>
+
 <section>
-    <h2>Basis-HTML-Gerüst</h2>
+    <h2>Basisgerüst</h2>
     <div class="code-box">
 &lt;!DOCTYPE html&gt;<br>
 &lt;html lang="de"&gt;<br>
@@ -90,45 +103,62 @@ footer {
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Titel hier&lt;/title&gt;<br>
 &nbsp;&nbsp;&lt;/head&gt;<br>
 &nbsp;&nbsp;&lt;body&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Hier beginnt der Inhalt --&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<!-- Inhalt hier --> <br>
 &nbsp;&nbsp;&lt;/body&gt;<br>
 &lt;/html&gt;
     </div>
 </section>
 
 <section>
-    <h2>Überschriften & Absätze</h2>
+    <h2>Überschriften</h2>
     <div class="code-box">
-&lt;h1&gt;Meine Überschrift&lt;/h1&gt;<br>
-&lt;h2&gt;Unterüberschrift&lt;/h2&gt;<br>
-&lt;p&gt;Dies ist ein Absatz.&lt;/p&gt;
-    </div>
-    <div class="info">
-        💡 Übung: Schreibe drei Überschriften und zwei Absätze in deine HTML-Datei.
+&lt;h1&gt;Überschrift 1&lt;/h1&gt;<br>
+&lt;h2&gt;Überschrift 2&lt;/h2&gt;<br>
+&lt;h3&gt;Überschrift 3&lt;/h3&gt;<br>
+&lt;h4&gt;Überschrift 4&lt;/h4&gt;<br>
+&lt;h5&gt;Überschrift 5&lt;/h5&gt;<br>
+&lt;h6&gt;Überschrift 6&lt;/h6&gt;
     </div>
 </section>
 
 <section>
-    <h2>Bilder & Links</h2>
+    <h2>Textformatierung</h2>
     <div class="code-box">
-&lt;img src="bild.jpg" alt="Beschreibung des Bildes"&gt;<br>
-&lt;a href="https://www.wikipedia.de"&gt;Wikipedia&lt;/a&gt;
-    </div>
-    <div class="info">
-        💡 Tipp: Bilder müssen im gleichen Ordner wie die HTML-Datei liegen.
+&lt;p&gt;Absatz Text&lt;/p&gt;<br>
+&lt;b&gt;Fett&lt;/b&gt;<br>
+&lt;i&gt;Kursiv&lt;/i&gt;<br>
+&lt;strong&gt;Stark hervorgehoben&lt;/strong&gt;<br>
+&lt;em&gt;Betont&lt;/em&gt;<br>
+&lt;br&gt; <!-- Zeilenumbruch --><br>
+&lt;hr&gt; <!-- Horizontale Linie -->
     </div>
 </section>
 
 <section>
-    <h2>Listen & Tabellen</h2>
+    <h2>Links & Bilder</h2>
     <div class="code-box">
-<!-- Ungeordnete Liste --> <br>
+&lt;a href="https://example.com"&gt;Linktext&lt;/a&gt;<br>
+&lt;img src="bild.jpg" alt="Beschreibung"&gt;
+    </div>
+</section>
+
+<section>
+    <h2>Listen</h2>
+    <div class="code-box">
 &lt;ul&gt;<br>
-&nbsp;&nbsp;&lt;li&gt;Erster Punkt&lt;/li&gt;<br>
-&nbsp;&nbsp;&lt;li&gt;Zweiter Punkt&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Punkt 1&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Punkt 2&lt;/li&gt;<br>
 &lt;/ul&gt;<br><br>
+&lt;ol&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Erster&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Zweiter&lt;/li&gt;<br>
+&lt;/ol&gt;
+    </div>
+</section>
 
-<!-- Tabelle --> <br>
+<section>
+    <h2>Tabellen</h2>
+    <div class="code-box">
 &lt;table border="1"&gt;<br>
 &nbsp;&nbsp;&lt;tr&gt;&lt;th>Name&lt;/th&gt;&lt;th>Alter&lt;/th&gt;&lt;/tr&gt;<br>
 &nbsp;&nbsp;&lt;tr&gt;&lt;td>Anna&lt;/td&gt;&lt;td>14&lt;/td&gt;&lt;/tr&gt;<br>
@@ -138,17 +168,18 @@ footer {
 </section>
 
 <section>
-    <h2>Mini-Übung</h2>
-    <ul>
-        <li>Erstelle ein eigenes HTML-Gerüst</li>
-        <li>Füge Überschriften, Absätze, ein Bild und einen Link hinzu</li>
-        <li>Erstelle eine Liste mit drei Punkten</li>
-        <li>Baue eine kleine Tabelle (z. B. Namen & Alter)</li>
-    </ul>
+    <h2>Sondertags</h2>
+    <div class="code-box">
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;title&gt;Titel&lt;/title&gt;<br>
+&lt;link rel="stylesheet" href="style.css"&gt;<br>
+&lt;div&gt;&lt;/div&gt;<br>
+&lt;span&gt;&lt;/span&gt;
+    </div>
 </section>
 
 <footer>
-    Informatik • 9. Klasse • HTML-Kopiervorlagen
+    Informatik • 9. Klasse • HTML-Referenzliste
 </footer>
 
 </body>
