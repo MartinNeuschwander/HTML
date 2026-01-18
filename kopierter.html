@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>HTML-Referenzliste</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    margin: 0;
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(120deg, #ff0080, #ff66b2);
+    color: white;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+section {
+    padding: 40px 10%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: #ff0080;
+    margin-bottom: 15px;
+}
+
+/* Code-Box */
+.code-box {
+    background: #1e1e1e;
+    color: #dcdcdc;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Consolas, monospace;
+    margin: 15px 0;
+    overflow-x: auto;
+}
+
+/* Info-Box */
+.info {
+    background: #ffe0f0;
+    border-left: 6px solid #ff0080;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Zurück-Button */
+.back-button {
+    display: inline-block;
+    padding: 3px 20px;
+    background: #ff0080;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #ff66b2;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: #eee;
+    font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>HTML-Referenzliste</h1>
+    <p>Übersicht aller wichtigen HTML-Tags zum Kopieren</p>
+</header>
+
+<!-- Zurück-Button -->
+<section>
+    <a href="index.html" class="back-button">Zurück zur Übersicht</a>
+</section>
+
+<section>
+    <h2>Basisgerüst</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="de"&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Titel hier&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<!-- Inhalt hier --> <br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+</section>
+
+<section>
+    <h2>Überschriften</h2>
+    <div class="code-box">
+&lt;h1&gt;Überschrift 1&lt;/h1&gt;<br>
+&lt;h2&gt;Überschrift 2&lt;/h2&gt;<br>
+&lt;h3&gt;Überschrift 3&lt;/h3&gt;<br>
+&lt;h4&gt;Überschrift 4&lt;/h4&gt;<br>
+&lt;h5&gt;Überschrift 5&lt;/h5&gt;<br>
+&lt;h6&gt;Überschrift 6&lt;/h6&gt;
+    </div>
+</section>
+
+<section>
+    <h2>Textformatierung</h2>
+    <div class="code-box">
+&lt;p&gt;Absatz Text&lt;/p&gt;<br>
+&lt;b&gt;Fett&lt;/b&gt;<br>
+&lt;i&gt;Kursiv&lt;/i&gt;<br>
+&lt;strong&gt;Stark hervorgehoben&lt;/strong&gt;<br>
+&lt;em&gt;Betont&lt;/em&gt;<br>
+&lt;br&gt; <!-- Zeilenumbruch --><br>
+&lt;hr&gt; <!-- Horizontale Linie -->
+    </div>
+</section>
+
+<section>
+    <h2>Links & Bilder</h2>
+    <div class="code-box">
+&lt;a href="https://example.com"&gt;Linktext&lt;/a&gt;<br>
+&lt;img src="bild.jpg" alt="Beschreibung"&gt;
+    </div>
+</section>
+
+<section>
+    <h2>Listen</h2>
+    <div class="code-box">
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Punkt 1&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Punkt 2&lt;/li&gt;<br>
+&lt;/ul&gt;<br><br>
+&lt;ol&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Erster&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Zweiter&lt;/li&gt;<br>
+&lt;/ol&gt;
+    </div>
+</section>
+
+<section>
+    <h2>Tabellen</h2>
+    <div class="code-box">
+&lt;table border="1"&gt;<br>
+&nbsp;&nbsp;&lt;tr&gt;&lt;th>Name&lt;/th&gt;&lt;th>Alter&lt;/th&gt;&lt;/tr&gt;<br>
+&nbsp;&nbsp;&lt;tr&gt;&lt;td>Anna&lt;/td&gt;&lt;td>14&lt;/td&gt;&lt;/tr&gt;<br>
+&nbsp;&nbsp;&lt;tr&gt;&lt;td>Ben&lt;/td&gt;&lt;td>15&lt;/td&gt;&lt;/tr&gt;<br>
+&lt;/table&gt;
+    </div>
+</section>
+
+<section>
+    <h2>Sondertags</h2>
+    <div class="code-box">
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;title&gt;Titel&lt;/title&gt;<br>
+&lt;link rel="stylesheet" href="style.css"&gt;<br>
+&lt;div&gt;&lt;/div&gt;<br>
+&lt;span&gt;&lt;/span&gt;
+    </div>
+</section>
+
+<footer>
+    Informatik • 9. Klasse • HTML-Referenzliste
+</footer>
+
+</body>
+</html>
