@@ -5,91 +5,69 @@
 <title>Erste Schritte mit HTML</title>
 
 <style>
-/* ---------------- GRUNDLAYOUT ---------------- */
+/* Grundfarben */
+:root {
+    --accent-pink: #ff0080;
+    --text-dark: #222;
+    --bg-light: #f9f9f9;
+    --bg-section: #ffffff;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
-    color: #222;
-    line-height: 1.7;
+    font-family: Arial, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
     margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 header {
-    background: #dc3af9;
+    background: linear-gradient(120deg, var(--accent-pink), #ff66b2);
     color: white;
-    padding: 60px 10%;
+    padding: 40px 10%;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 2.8em;
+    margin: 0;
 }
 
-header p {
-    font-size: 1.2em;
-}
-
-/* ---------------- SECTIONS ---------------- */
 section {
-    padding: 60px 10%;
-}
-
-section:nth-child(even) {
-    background: white;
+    padding: 50px 10%;
+    background: var(--bg-section);
+    border-bottom: 1px solid #ddd;
 }
 
 h2 {
-    color: #0066ff;
+    color: var(--accent-pink);
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
-/* ---------------- CODE BOX ---------------- */
-.code {
+/* Kopiervorlagen */
+.code-box {
     background: #1e1e1e;
     color: #dcdcdc;
     padding: 20px;
     border-radius: 8px;
     overflow-x: auto;
     font-family: Consolas, monospace;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
-.code span {
-    color: #4fc3f7;
+/* Mini Übungen */
+ul {
+    margin-left: 20px;
 }
 
-/* ---------------- INFO BOX ---------------- */
-.info {
-    background: #e3f2fd;
-    border-left: 6px solid #0066ff;
-    padding: 20px;
-    margin: 30px 0;
-}
-
-/* ---------------- TAG LISTE ---------------- */
-.tags {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.tag {
-    background: #ffffff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.tag h3 {
-    margin-top: 0;
-    color: #0066ff;
-}
-
-/* ---------------- FOOTER ---------------- */
+/* Footer */
 footer {
-    background: #222;
-    color: #aaa;
     text-align: center;
-    padding: 30px;
+    padding: 25px;
+    background: #222;
+    color: #eee;
     font-size: 0.9em;
 }
 </style>
@@ -116,7 +94,32 @@ footer {
         CSS sagt <em>wie</em> es aussieht.
     </div>
 </section>
+<section>
+    <h2>Was ist ein HTML-Tag?</h2>
+    <p>
+        Ein <strong>Tag</strong> ist ein Befehl in HTML, der dem Browser sagt, 
+        wie etwas auf der Webseite dargestellt werden soll.
+        Die meisten Tags haben einen <em>öffnenden</em> und einen <em>schließenden</em> Tag.
+    </p>
 
+    <div class="code-box">
+        <!-- Beispiel Tag -->
+        &lt;p&gt;Dies ist ein Absatz.&lt;/p&gt;<br>
+        &lt;h1&gt;Meine Überschrift&lt;/h1&gt;<br>
+        &lt;img src="bild.jpg" alt="Beschreibung"&gt;  <!-- einige Tags schließen sich selbst -->
+    </div>
+
+    <div class="info">
+        💡 Merke: 
+        <ul>
+            <li>Der <span style="color:#ff0080">&lt;p&gt;</span>-Tag wird mit <span style="color:#ff0080">&lt;/p&gt;</span> geschlossen.</li>
+            <li>Der <span style="color:#ff0080">&lt;h1&gt;</span>-Tag wird mit <span style="color:#ff0080">&lt;/h1&gt;</span> geschlossen.</li>
+            <li>Manche Tags, wie <span style="color:#ff0080">&lt;img&gt;</span>, schließen sich selbst und brauchen kein <span style="color:#ff0080">&lt;/img&gt;</span>.</li>
+        </ul>
+    </div>
+
+    <p>Übung: Schreibe einen Absatz und eine Überschrift in deine HTML-Datei und schließe beide Tags korrekt!</p>
+</section>
 <section>
     <h2>Die kleinste HTML-Seite</h2>
     <p>Kopiere diesen Code in deine Datei namens <strong>index.html</strong>:</p>
