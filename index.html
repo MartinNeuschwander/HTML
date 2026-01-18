@@ -75,18 +75,22 @@ footer {
 .forward-button {
     display: inline-block;
     padding: 12px 28px;
-    background: #ff0080;
+    background: #ff0080;       /* knalliges Pink */
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border: none;               /* kein Rahmen */
+    outline: none;              /* keine Fokuslinie */
+    border-radius: 50px;        /* runde Kanten */
     font-weight: bold;
     font-size: 1.1em;
+    box-shadow: none;           /* keine Schatten */
     transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
 }
 
 .forward-button:hover {
-    background: #ff66b2;
-    transform: scale(1.05);
+    background: #ff66b2;        /* heller Pink-Ton beim Hover */
+    transform: translateY(-2px); /* leicht nach oben */
 }
 
 </style>
