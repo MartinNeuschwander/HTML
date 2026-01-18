@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Erste Schritte mit HTML</title>
+
+<style>
+/* ---------------- GRUNDLAYOUT ---------------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.7;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(120deg, #0066ff, #00ccff);
+    color: white;
+    padding: 60px 10%;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* ---------------- SECTIONS ---------------- */
+section {
+    padding: 60px 10%;
+}
+
+section:nth-child(even) {
+    background: white;
+}
+
+h2 {
+    color: #0066ff;
+}
+
+/* ---------------- CODE BOX ---------------- */
+.code {
+    background: #1e1e1e;
+    color: #dcdcdc;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+    margin: 20px 0;
+}
+
+.code span {
+    color: #4fc3f7;
+}
+
+/* ---------------- INFO BOX ---------------- */
+.info {
+    background: #e3f2fd;
+    border-left: 6px solid #0066ff;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+/* ---------------- TAG LISTE ---------------- */
+.tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tag {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tag h3 {
+    margin-top: 0;
+    color: #0066ff;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Erste Schritte mit HTML</h1> mit Herrn Neuschwander
+    <p>Dein Einstieg in die Welt der Webseiten</p>
+</header>
+
+<section>
+    <h2>Was ist HTML?</h2>
+    <p>
+        HTML ist die Sprache, mit der Webseiten aufgebaut werden.
+        HTML beschreibt <strong>Struktur</strong>, nicht das Design.
+    </p>
+
+    <div class="info">
+        💡 <strong>Merksatz:</strong>  
+        HTML sagt <em>was</em> auf der Seite steht – CSS sagt <em>wie</em> es aussieht.
+    </div>
+</section>
+
+<section>
+    <h2>Die kleinste HTML-Seite</h2>
+    <p>Kopiere diesen Code in eine Datei namens <strong>index.html</strong>:</p>
+
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="de"&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Meine erste Webseite&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hallo Welt!&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Das ist meine erste Webseite.&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+</section>
+
+<section>
+    <h2>Wichtige HTML-Tags</h2>
+
+    <div class="tags">
+        <div class="tag">
+            <h3>&lt;h1&gt; – &lt;h6&gt;</h3>
+            <p>Überschriften in verschiedenen Größen</p>
+        </div>
+
+        <div class="tag">
+            <h3>&lt;p&gt;</h3>
+            <p>Absätze für normalen Text</p>
+        </div>
+
+        <div class="tag">
+            <h3>&lt;img&gt;</h3>
+            <p>Bilder einbinden</p>
+        </div>
+
+        <div class="tag">
+            <h3>&lt;a&gt;</h3>
+            <p>Links zu anderen Webseiten</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Bilder einfügen</h2>
+    <p>So bindest du ein Bild ein:</p>
+
+    <div class="code">
+&lt;img src="bild.jpg" alt="Beschreibung des Bildes"&gt;
+    </div>
+
+    <div class="info">
+        📁 Das Bild muss im gleichen Ordner liegen wie die HTML-Datei.
+    </div>
+</section>
+
+<section>
+    <h2>Links erstellen</h2>
+
+    <div class="code">
+&lt;a href="https://www.wikipedia.de"&gt;Wikipedia&lt;/a&gt;
+    </div>
+</section>
+
+<section>
+    <h2>Mini-Übung</h2>
+    <ul>
+        <li>Erstelle eine Überschrift mit deinem Namen</li>
+        <li>Schreibe einen Absatz über dich</li>
+        <li>Füge ein Bild ein</li>
+        <li>Erstelle einen Link zu deiner Lieblingsseite</li>
+    </ul>
+</section>
+
+<footer>
+    Informatik • 9. Klasse • HTML-Grundlagen
+</footer>
+
+</body>
+</html>
